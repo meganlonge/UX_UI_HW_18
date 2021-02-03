@@ -1,0 +1,273 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: left;
+    font-family: 'Belleza', sans-serif;
+    font-size: 32px;
+}
+
+h2 {
+    color: #FFFFFF;
+    text-align: left;
+    font-family: 'Belleza', sans-serif;
+    font-size: 28px;
+}
+
+h3 {
+    color: #FFFFFF;
+    text-align: left;
+    font-family: 'Belleza', sans-serif;
+    font-size: 24px;
+}
+
+h4 {
+    color: #FFFFFF;
+    text-align: left;
+    font-family: 'Belleza', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    text-align: left;
+    color: #FFFFFF;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 16px;
+  }
+
+.heroImg {
+    height: 600px;
+    padding: 10px;
+    background-color: #800F37;
+  }
+ 
+.skills {
+    background-color: #800F37;
+    padding: 25px;
+  }
+
+  nav li {
+    width: 23%;
+    padding: 1%;
+    color: #FFFFFF;
+    display:inline;
+    font-family: 'Belleza', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+.nav {
+    width: 100%;
+    padding: 1%;
+    float: right;
+    display: inline-block;
+    vertical-align: top;
+    text-align:center;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    float: left;
+}
+
+.inline-block {
+    padding: 15px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #215053;
+    padding: 10px;
+    width: 100%;
+}
+
+footer-pos {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+li {
+    float: right;
+    display: inline;
+  }
+  
+li a {
+    color: #FFFFFF;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+  }
+
+  .button {
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Belleza', sans-serif;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    align: center
+  }
+  .flex_item {
+    padding:10px;
+    margin: 10px;
+    background-color: #800F37;
+    color: white;
+    width: 33.3%;
+  }
+  .flex {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+  }
+  #column {
+    background-color: #E6F5FF;
+    flex-direction: column;
+  }
+  #row {
+    flex-direction: row;
+  }
+  .flexItem1 {
+    margin: 10px;
+    padding: 10px;
+    width: 33.3%;
+    height: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+
+  }
+  .flexItem2 {
+    margin: 10px;
+    padding: 10px;
+    width: 75%;
+    height: 100%;
+    text-align: justify;
+    flex-shrink: 0;
+    overflow: hidden;
+    
+  }
+  .flexItem3 {
+    margin: 10px;
+    padding: 10px;
+    width: 75%;
+    height: 100%;
+    text-align: justify;
+    flex-shrink: 0;
+    overflow: hidden;
+    float: left;
+  }  
+
+  .flexItem4 {
+    margin: 10px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    text-align: justify;
+    flex-shrink: 0;
+    overflow: hidden;
+    float: left;
+  }  
+
+  .flexContainer {
+    display: flex;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+    
+  }
+  .justifyContent {
+    justify-content: center;
+  }
+  .alignItems {
+    align-items: center;
+  }
+  img {
+    flex-shrink: 0;
+  }
+ 
+  .workGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "leftSide rightSide rightSide";
+  }
+
+  .leftSide {
+      grid-area: leftSide;
+      justify-content: stretch;
+      align-content: space-between;
+      padding: 10px;
+  }
+
+  .rightSide {
+      grid-area: rightSide;
+      justify-content: stretch;
+      align-content: space-between;
+      padding: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .flex_item {
+        padding: 10px;
+        margin: 10px;
+        background-color: #800F37;
+        color: white;
+        width: 100%;}
+  
+    .workGrid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "leftSide"
+            "rightSide"
+            "rightSide"
+            ;
+    .flexItem4 {
+        width: 0%;
+    }
+}
